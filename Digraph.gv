@@ -1,0 +1,17 @@
+digraph {
+	"drill-01" [color=green shape=doublecircle]
+	"hsds-1-measures" [color=green shape=sqaure]
+	"drill-01" -> "hsds-1-measures"
+	runway [color=red shape=doublecircle]
+	"runway-hsds-1-anomaly-score" [color=red shape=sqaure]
+	"drill-01" -> runway
+	runway -> "runway-hsds-1-anomaly-score"
+	runway [color=red shape=doublecircle]
+	"runway-hsds-1-recon" [color=red shape=sqaure]
+	"drill-01" -> runway
+	runway -> "runway-hsds-1-recon"
+	runway [color=red shape=doublecircle]
+	"runway-hsds-1-recon-error" [color=red shape=sqaure]
+	"drill-01" -> runway
+	runway -> "runway-hsds-1-recon-error"
+}
